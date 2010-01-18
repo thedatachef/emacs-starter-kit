@@ -126,6 +126,10 @@
 (global-set-key  (kbd "<C-tab>")        'indent-line-or-region-rigidly)
 (global-set-key  (kbd "<C-S-tab>")      'indent-code-rigidly)
 
+;; OSX commands
+(global-set-key  (kbd "M-h")            'do-hide-emacs)
+(global-set-key  (kbd "M-s-h")          'mark-paragraph)
+
 (global-set-key  [C-f1]                 'customize-apropos)
 (global-set-key  [f8]                   'kmacro-end-and-call-macro)
 (global-set-key  [M-f8]                 'kmacro-end-and-call-macro)
