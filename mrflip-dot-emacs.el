@@ -10,17 +10,17 @@
 ;;;;   Set Window Font, Size and Position
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
-(setq default-frame-alist '( (left . -1) (top . 0) (width . 90)  (height . 40) )) 
-(setq initial-frame-alist '( (left . 0)  (top . 0) (width . 110) (height . 50) ))
+(setq default-frame-alist '( (left . -1) (top . 0) (width . 170)  (height . 40) )) 
+(setq initial-frame-alist '( (left . 0)  (top . 0) (width . 190) (height . 50) ))
 
-(setq myfont "-apple-bitstream vera sans mono-medium-r-normal--0-0-0-0-m-0-iso10646-1")
+;;(setq myfont "-bitstream-Bitstream Vera Sans Mono-normal-normal-normal-*-15-*-*-*-m-0-fontset-startup")
 ;;(set-default-font "fixed")
-;; (setq myfont "Bitstream Vera Sans Mono-9")
-;; (set-default-font "-*-bitstream vera sans mono bold-bold-r-normal--*-132-*-*-m-*-*-*")
+(setq myfont "Bitstream Vera Sans Mono-11:bold")
+;;(set-default-font "-bitstream-Bitstream Vera Sans Mono-normal-normal-normal-*-15-*-*-*-m-0-fontset-startup")
 (if emacs22up 
     (progn (set-default-font myfont)
            (add-to-list 'default-frame-alist (cons 'font myfont)) )
-  ;;else
+  else
   (set-default-font "fixed") ) 
 
 ;; Several mysterious but important customizations.
