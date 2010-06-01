@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 (color-theme-twilight)
+=======
+(require 'color-theme)
+(load-file "~/.emacs.d/elpa-to-submit/twilight.el")
+(color-theme-twilight)
+;;(color-theme-dark-blue)
+>>>>>>> cf6dbb9a6cbf41c819d1740dcf902d42012c929c
 
 (defun shell-new-shell (name-of-new-shell-buffer)
   (interactive "MName of shell buffer: ")
