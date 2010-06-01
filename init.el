@@ -9,6 +9,9 @@
 ;; and brighter; it simply makes everything else vanish."
 ;; -Neal Stephenson, "In the Beginning was the Command Line"
 
+
+(modify-frame-parameters nil '((wait-for-wm . nil)))
+
 ;; Turn off mouse interface early in startup to avoid momentary display
 ;; You really don't need these; trust me.
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
@@ -29,6 +32,9 @@
 (add-to-list 'load-path (concat dotfiles-dir "/elpa-to-submit"))
 (add-to-list 'load-path (concat dotfiles-dir "/elpa-to-submit/jabber"))
 (add-to-list 'load-path (concat dotfiles-dir "/vendor"))
+;;
+(add-to-list 'load-path "pig-mode")
+(autoload 'pig-mode "pig-mode" "Major mode for editing .pig files")
 
 (setq autoload-file (concat dotfiles-dir "loaddefs.el"))
 (setq package-user-dir (concat dotfiles-dir "elpa"))
@@ -61,7 +67,7 @@
 ;; (load "elpa-to-submit/nxhtml/autostart")
 
 ;; Load up starter kit customizations
-
+;;(require 'pig-mode)
 (require 'starter-kit-defuns)
 (require 'starter-kit-bindings)
 (require 'starter-kit-misc)

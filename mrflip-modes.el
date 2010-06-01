@@ -28,7 +28,7 @@
     '("\\([cC]ap\\|[Rr]ake\\)file\\'"  . ruby-mode)
     '("\\.\\(gemspec\\|god\\)$"        . ruby-mode)
     '("\\.sass$"                       . sass-mode)
-    '("\\.pig\\'"                      . sql-mode)
+    '("\\.pig\\'"                      . pig-mode)
     '("\\.ya?ml\\'"                    . yaml-mode)
     '("\\.feature\(\\.erb\)?\\'"       . feature-mode)
     '("\\.ile\.txt\\'"                 . textile-mode)
