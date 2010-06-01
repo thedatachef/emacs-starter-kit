@@ -33,14 +33,10 @@
 (add-to-list 'load-path (concat dotfiles-dir "/elpa-to-submit"))
 (add-to-list 'load-path (concat dotfiles-dir "/elpa-to-submit/jabber"))
 (add-to-list 'load-path (concat dotfiles-dir "/vendor"))
-<<<<<<< HEAD
 ;;
 (add-to-list 'load-path "pig-mode")
 (autoload 'pig-mode "pig-mode" "Major mode for editing .pig files")
 
-=======
-;;(add-to-list 'load-path ("/usr/share/emacs/site-lisp/emacs/site-lisp/emacs-goodies-el/"))
->>>>>>> cf6dbb9a6cbf41c819d1740dcf902d42012c929c
 (setq autoload-file (concat dotfiles-dir "loaddefs.el"))
 (setq package-user-dir (concat dotfiles-dir "elpa"))
 (setq custom-file (concat dotfiles-dir "custom.el"))
