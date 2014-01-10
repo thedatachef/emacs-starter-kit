@@ -62,7 +62,9 @@
             "DEFINE" "INPUT" "OUTPUT" "SHIP" "CACHE" "STREAM" "THROUGH"
             "SECONDS" "MINUTES" "HOURS" "ASC" "DESC"
             "NULL" "AND" "OR" "NOT" "EQ" "NEQ" "GT" "LT" "GTE" "LTE"
-            "MATCHES" "IS" "DUMP" "ILLUSTRATE" "DESCRIBE")
+            "MATCHES" "IS" "DUMP" "ILLUSTRATE" "DESCRIBE"
+            "RANK"
+            )
           'words)
         (1 font-lock-keyword-face))
 
@@ -73,7 +75,9 @@
           (regexp-opt
            '("FLATTEN" "SUM" "COUNT" "MIN" "MAX" "AVG" "ARITY" "TOKENIZE"
              "DIFF" "SIZE" "CONCAT"
-             "BinStorage" "PigStorage" "TextLoader" "PigDump" "IsEmpty")
+             "BinStorage" "PigStorage" "TextLoader" "PigDump" "IsEmpty"
+             "TOTUPLE TOBAG BagToTuple"
+             )
            'words)
           "(")
         (1 font-lock-function-name-face))
