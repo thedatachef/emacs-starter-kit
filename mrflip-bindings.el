@@ -26,7 +26,7 @@
 ;; (global-set-key	  [delete]	    'delete-char)
 ;; ;(global-set-key   [backspace]	     'backward-delete-char)
 
-
+(global-set-key  (kbd "C-.")            (lambda () (interactive)))
 (global-set-key  [kp-delete]            'delete-char)
 (global-set-key	 [C-delete]             'kill-word)
 (global-set-key	 [C-backspace]          'backward-kill-word)
